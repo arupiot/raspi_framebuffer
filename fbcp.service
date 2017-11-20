@@ -1,0 +1,11 @@
+[Unit]
+Description=fbcp_service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/fbcp_service.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
