@@ -32,10 +32,15 @@ Type "help", "copyright", "credits" or "license" for more information.
 2. disable VNC in sudo rasp-config
 3. download and build **fbcp**: 
 	*wget https://github.com/tasanakorn/rpi-fbcp
+	
 	cd rpi-fbcp
+	
 	mkdir build
+	
 	cmake ..
+	
 	make*
+	
 4. to run fbcp, *cd /home/pi/rpi-fbcp/build/*,  then run executable with *./fbcp*
 
 
