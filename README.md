@@ -31,15 +31,15 @@ Type "help", "copyright", "credits" or "license" for more information.
 1. cmake is neccessary to create make-file for compilation: *sudo apt-get install cmake* 
 2. disable VNC in sudo rasp-config
 3. download and build **fbcp**: 
-	*wget https://github.com/tasanakorn/rpi-fbcp
+	*wget https://github.com/tasanakorn/rpi-fbcp*
 	
-	cd rpi-fbcp
+	*cd rpi-fbcp*
 	
-	mkdir build
+	*mkdir build*
 	
-	cmake ..
+	*cmake ..*
 	
-	make*
+	*make*
 	
 4. to run fbcp, *cd /home/pi/rpi-fbcp/build/*,  then run executable with *./fbcp*
 
