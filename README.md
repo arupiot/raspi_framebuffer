@@ -1,4 +1,4 @@
-# #Kivy UI framework installation on Raspberry Pi##
+##Kivy UI framework installation on Raspberry Pi##
 
 The Kivy framework allows developers to create touch-based graphical interfaces. 
 
