@@ -12,7 +12,8 @@ gstreamer1.0-{omx,alsa} python-dev*
 3. Finally install kivy: *sudo pip install kivy*
 4. Make sure the installation was succesfull, type *kivy* and then *import kivy* (see sample output)
 
-`~> kivy
+```
+~> kivy
 Python 2.7.10 (default, Jul 15 2017, 17:16:57) 
 [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -21,7 +22,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 [INFO   ] [Kivy        ] v1.10.0
 [INFO   ] [Python      ] v2.7.10 (default, Jul 15 2017, 17:16:57) 
 [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)]
->>>` 
+>>>
+```
 
 
 **fbcp installation:**
