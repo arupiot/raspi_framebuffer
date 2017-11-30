@@ -52,17 +52,10 @@ When Kivy is installed, a configuration file is created. In order to make touch 
 
 1. *nano ~/.kivy/config.ini*
 
-2. Find the `[input]` section and change it this way:
+2. Find the `[input]` section and change it so it looks like this:
 
-`#[input]
-##%(name)s = probesysfs,provider=hidinput 
-#mouse = mouse
-#mtdev_%(name)s = probesysfs,provider=mtdev
-#hid_%(name)s = probesysfs,provider=hidinput
-
-[input]
+`[input]
 mouse = mouse
-# %(name)s = probesysfs,provider=hidinput
 stmpe-ts = hidinput,/dev/input/event2,rotation=270`
 
 3. Close the file with Ctr+O and Ctr+X. 
