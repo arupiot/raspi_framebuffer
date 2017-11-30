@@ -60,7 +60,7 @@ stmpe-ts = hidinput,/dev/input/event2,rotation=270`
 
 3. Close the file with Ctr+O and Ctr+X. 
 
-4 To test the touchscreen with Kivy, go to `/kivy/examples/demo/touchtrace` and run the main.py script.
+4. To test the touchscreen with Kivy, go to `/kivy/examples/demo/touchtrace` and run the main.py script.
 
 
 
