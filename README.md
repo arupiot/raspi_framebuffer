@@ -28,6 +28,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 **fbcp installation:**
 
+'fbcp' is a frame buffer copy/mirror application that's necessary for TFT screen. Installation:
+
 1. cmake is neccessary to create make-file for compilation: *sudo apt-get install cmake* 
 2. disable VNC in sudo rasp-config
 3. download and build **fbcp**: 
@@ -44,6 +46,28 @@ Type "help", "copyright", "credits" or "license" for more information.
 4. to run fbcp, *cd /home/pi/rpi-fbcp/build/*,  then run executable with *./fbcp*
 
 
+**touch screen settings within Kivy**
+
+When Kivy is installed, a configuration file is created. In order to make touch work, the said config file has to be ammended. 
+
+1. *nano ~/.kivy/config.ini*
+
+2. Find the `[input]` section and change it this way:
+
+`#[input]
+##%(name)s = probesysfs,provider=hidinput 
+#mouse = mouse
+#mtdev_%(name)s = probesysfs,provider=mtdev
+#hid_%(name)s = probesysfs,provider=hidinput
+
+[input]
+mouse = mouse
+# %(name)s = probesysfs,provider=hidinput
+stmpe-ts = hidinput,/dev/input/event2,rotation=270`
+
+3. Close the file with Ctr+O and Ctr+X. 
+
+4 To test the touchscreen with Kivy, go to `/kivy/examples/demo/touchtrace` and run the main.py script.
 
 
 
